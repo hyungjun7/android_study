@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="16dp"
+  tools:context=".MainActivity">
+
+  <!-- match-parent 는 상위 컴포넌트에 맞춰줌 -->
+  <!-- padding 은 안쪽 여백, margin 은 바깥 -->
+  <!-- sp 는 핸드폰에서 설정한 글자크기에 반응함, dp는 고정 -->
+  <!-- res/values/colors 에 색상을 미리 정의할 수 있음 -->
+  <!-- res/values/string 에 문자열을 미리 정의할 수 있음 -->
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/height"
+    android:textColor="@color/custom_black"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+  <EditText
+    android:id="@+id/heightEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:inputType="number" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="@string/weight"
+    android:textColor="@color/custom_black"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+  <EditText
+    android:id="@+id/weightEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:ems="10"
+    android:inputType="number" />
+
+  <Button
+    android:id="@+id/resultButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:text="확인하기" />
+
+</LinearLayout>
