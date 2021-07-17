@@ -1,0 +1,2 @@
+rootProject.name = "fc_demo_5_photo_frame"
+include ':app'
