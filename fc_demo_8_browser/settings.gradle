@@ -1,0 +1,2 @@
+rootProject.name = "fc_demo_8_browser"
+include ':app'
