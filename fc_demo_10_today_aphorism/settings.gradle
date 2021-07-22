@@ -1,0 +1,2 @@
+rootProject.name = "fc_demo_10_today_aphorism"
+include ':app'
